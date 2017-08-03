@@ -322,9 +322,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
     (message "add-d-to-ediff-mode-map")
   )
   (add-hook 'ediff-startup-hook 'add-d-to-ediff-mode-map)
-  (defun erin-simon-fun()
-    (interactive)
-    (message "Erin and Simon forever"))
+
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
