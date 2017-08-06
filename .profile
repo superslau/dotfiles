@@ -16,5 +16,3 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias cs='config status'
 alias ca='config add'
 alias cl='config log --oneline'
-export LSCOLORS="Gxfxcxdxbxegedabagacad"
-export CLICOLOR=YES
