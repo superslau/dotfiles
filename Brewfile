@@ -32,6 +32,7 @@ brew "mongodb", restart_service: true
 brew "mysql", restart_service: true
 brew "ncdu"
 brew "phantomjs"
+brew "plantuml"
 brew "python3"
 brew "r"
 brew "redis", restart_service: true
