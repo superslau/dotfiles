@@ -338,7 +338,11 @@ you should place your code here."
   (global-linum-mode)
 
   (require 'org-install)
+  (require 'ob-plantuml)
   (require 'ob-mathomatic)
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((plantuml . t)))
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((mathomatic . t)))
@@ -354,6 +358,8 @@ you should place your code here."
   (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
   (setq create-lockfiles nil)
   (defun select-all () (interactive) (mark-whole-buffer))
+  (setq org-plantuml-jar-path
+        (expand-file-name "/usr/local/Cellar/plantuml/1.2017.14/libexec/plantuml.jar"))
  )
 )
 ;; Do not write anything past this comment. This is where Emacs will
