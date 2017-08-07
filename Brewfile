@@ -37,6 +37,7 @@ brew "python3"
 brew "r"
 brew "redis", restart_service: true
 brew "the_silver_searcher"
+brew "trash"
 brew "watchman"
 brew "wget"
 brew "yarn"
