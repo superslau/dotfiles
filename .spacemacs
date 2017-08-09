@@ -312,6 +312,7 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  (setq initial-frame-alist '((top . 30) (left . 30) (width . 212) (height . 81)))
   (require 'ediff-init)
   (setq ns-use-srgb-colorspace nil)
   (defun ediff-copy-both-to-C ()
