@@ -366,7 +366,8 @@ you should place your code here."
   (defun select-all () (interactive) (mark-whole-buffer))
   (setq org-plantuml-jar-path
         (expand-file-name "/usr/local/Cellar/plantuml/1.2017.14/libexec/plantuml.jar"))
-  (setq org-agenda-files (list "~/org/home.org", "~/org/todo.org", "~/org/done.org"))
+  (setq org-agenda-files '("~/org/home.org"
+                           "~/org/work.org"))
 
   (setq org-refile-targets
         '((nil :maxlevel . 3)
